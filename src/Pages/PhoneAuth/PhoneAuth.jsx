@@ -1,7 +1,6 @@
 import { Card, Button } from "bootstrap-4-react";
-import OtpInput from 'otp-input-react';
 import { useState } from "react";
-import PhoneInput from "react-phone-input-2";
+import { Input, OTPInput } from "./PhoneAuth.styled";
 import 'react-phone-input-2/lib/style.css';
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { auth } from "../../firebase";
@@ -36,9 +35,7 @@ const phoneNumber = '+' + phone;
     .then((confirmationResult) => {
       window.confirmationResult = confirmationResult;
       setShowOtp(true);
-      
-      toast.success("Sign in with phone number successfully");
-    }).catch((err) => {
+          }).catch((err) => {
       toast.error(err.message)
     });
 
@@ -47,9 +44,9 @@ const phoneNumber = '+' + phone;
 function OTPVerify() {
     window.confirmationResult.confirm(otp).then(async(result) => {
         const user = result.user;
-        console.log(user);
         setUser(user);
         isUserExistPhone(user.phoneNumber, {phoneNumber: user.phoneNumber, displayName: user.displayName})
+        toast.success("Welcome to your CRM")
       }).catch((err) => {
         toast.error(err.message)
       });
@@ -64,18 +61,18 @@ function OTPVerify() {
         <Card text="center">
         
         <Card.Body>
-          <Card.Title>Phone Auth</Card.Title>
+          {/* <Card.Title>Phone Auth</Card.Title> */}
           {showOtp ? <>
             <Card.Text>
             Enter your OTP
           </Card.Text>
-          <OtpInput OTPLength={6} otpType="number" disabled={false} autofocus value={otp} onChange={setOtp}/>
-          <Button onClick={OTPVerify} primary outline>Verify OTP</Button></>
+          <OTPInput OTPLength={6} otpType="number" disabled={false} autofocus value={otp} onChange={setOtp}/>
+          <Button onClick={OTPVerify} info>Verify OTP</Button></>
           :  <><Card.Text>
         Enter your Phone Number
       </Card.Text>
-      <PhoneInput country='ua' value={phone} onChange={setPhone}/>
-      <Button primary outline onClick={signUp}>Send SMS</Button>
+      <Input country='ua' value={phone} onChange={setPhone}/>
+      <Button info onClick={signUp}>Send SMS</Button>
       </>}
          
         </Card.Body>
