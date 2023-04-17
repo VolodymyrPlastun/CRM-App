@@ -53,7 +53,7 @@ const CreateTrip = () => {
         return { ...item.data(), id: item.id };
       })
     );
-  });
+  }, [database]);
 
   const updateData = (id) => {
     let updatedData = doc(db, "trips", id);
