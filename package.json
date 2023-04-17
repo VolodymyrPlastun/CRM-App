@@ -1,8 +1,8 @@
 {
-  "name": "CRM-App",
+  "name": "crm-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://VolodymyrPlastun.github.io/CRM-App/",
+  "homepage": "https://VolodymyrPlastun.github.io/crm-app/",
   "dependencies": {
     "@firebase/app-compat": "^0.2.7",
     "@firebase/auth-compat": "^0.3.7",
