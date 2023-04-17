@@ -8,7 +8,7 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import { Form, Button, List } from "bootstrap-4-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { toast } from "react-hot-toast";
 import { ListItem, ItemLabel, ListDivider, Btn, FormBox, Label } from "./CreateTrip.styled";
 
@@ -46,14 +46,14 @@ const CreateTrip = () => {
     setData({ ...data, ...inputs });
   };
 
-  const getData = async () => {
+  const getData = useCallback(async () => {
     const data = await getDocs(database);
     setDataArr(
       data.docs.map((item) => {
         return { ...item.data(), id: item.id };
       })
     );
-  };
+  });
 
   const updateData = (id) => {
     let updatedData = doc(db, "trips", id);
@@ -74,7 +74,7 @@ const CreateTrip = () => {
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [getData]);
 
   return (
     <div>

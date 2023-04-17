@@ -18,7 +18,6 @@ const hundleSubmit = (evt) => {
 evt.preventDefault();
 signInWithEmailAndPassword(auth, data.email, data.password)
 .then(res => {
-    const user = res.user;
     toast.success('Welcome to your CRM');
     navigate('/users');
 })
