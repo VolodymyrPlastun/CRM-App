@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/CRM-App/static/css/main.a05f5ac2.css",
+    "main.js": "/CRM-App/static/js/main.16ce312c.js",
+    "static/js/46.2af5eb0b.chunk.js": "/CRM-App/static/js/46.2af5eb0b.chunk.js",
+    "static/js/290.1be27119.chunk.js": "/CRM-App/static/js/290.1be27119.chunk.js",
+    "static/js/473.d315ca70.chunk.js": "/CRM-App/static/js/473.d315ca70.chunk.js",
+    "static/js/87.6e0e3d9b.chunk.js": "/CRM-App/static/js/87.6e0e3d9b.chunk.js",
+    "static/js/831.cf7b7eb7.chunk.js": "/CRM-App/static/js/831.cf7b7eb7.chunk.js",
+    "static/js/739.6790e590.chunk.js": "/CRM-App/static/js/739.6790e590.chunk.js",
+    "static/js/385.bb87d538.chunk.js": "/CRM-App/static/js/385.bb87d538.chunk.js",
+    "static/js/680.4311cc34.chunk.js": "/CRM-App/static/js/680.4311cc34.chunk.js",
+    "static/js/287.0d95887d.chunk.js": "/CRM-App/static/js/287.0d95887d.chunk.js",
+    "static/js/539.648e95f6.chunk.js": "/CRM-App/static/js/539.648e95f6.chunk.js",
+    "static/js/292.65588f28.chunk.js": "/CRM-App/static/js/292.65588f28.chunk.js",
+    "static/js/444.bfeb57dc.chunk.js": "/CRM-App/static/js/444.bfeb57dc.chunk.js",
+    "static/css/393.36eed8e3.chunk.css": "/CRM-App/static/css/393.36eed8e3.chunk.css",
+    "index.html": "/CRM-App/index.html",
+    "main.a05f5ac2.css.map": "/CRM-App/static/css/main.a05f5ac2.css.map",
+    "main.16ce312c.js.map": "/CRM-App/static/js/main.16ce312c.js.map",
+    "46.2af5eb0b.chunk.js.map": "/CRM-App/static/js/46.2af5eb0b.chunk.js.map",
+    "290.1be27119.chunk.js.map": "/CRM-App/static/js/290.1be27119.chunk.js.map",
+    "473.d315ca70.chunk.js.map": "/CRM-App/static/js/473.d315ca70.chunk.js.map",
+    "87.6e0e3d9b.chunk.js.map": "/CRM-App/static/js/87.6e0e3d9b.chunk.js.map",
+    "831.cf7b7eb7.chunk.js.map": "/CRM-App/static/js/831.cf7b7eb7.chunk.js.map",
+    "739.6790e590.chunk.js.map": "/CRM-App/static/js/739.6790e590.chunk.js.map",
+    "385.bb87d538.chunk.js.map": "/CRM-App/static/js/385.bb87d538.chunk.js.map",
+    "680.4311cc34.chunk.js.map": "/CRM-App/static/js/680.4311cc34.chunk.js.map",
+    "287.0d95887d.chunk.js.map": "/CRM-App/static/js/287.0d95887d.chunk.js.map",
+    "539.648e95f6.chunk.js.map": "/CRM-App/static/js/539.648e95f6.chunk.js.map",
+    "292.65588f28.chunk.js.map": "/CRM-App/static/js/292.65588f28.chunk.js.map",
+    "444.bfeb57dc.chunk.js.map": "/CRM-App/static/js/444.bfeb57dc.chunk.js.map",
+    "393.36eed8e3.chunk.css.map": "/CRM-App/static/css/393.36eed8e3.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/css/main.a05f5ac2.css",
+    "static/js/main.16ce312c.js"
+  ]
+}
